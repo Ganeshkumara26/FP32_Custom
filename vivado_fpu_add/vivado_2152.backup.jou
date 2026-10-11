@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 13:30:45 2026
+# Process ID         : 2152
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16284 D:\Downloads\fpu_project_complete\fpu_project\vivado_fpu_add\fpu_add.xpr
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add/vivado.log
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7083 MB
+# Total Virtual      : 15446 MB
+# Available Virtual  : 7529 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add/fpu_add.xpr
+update_compile_order -fileset sources_1
+open_run impl_1

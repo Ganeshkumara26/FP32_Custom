@@ -1,0 +1,11 @@
+# Ignore entire docs folder
+docs/
+
+# Ignore tide_kb folder
+tide_kb/
+
+# Ignore markdown files except README
+*.md
+!README.md
+**/*.md
+!**/README.md

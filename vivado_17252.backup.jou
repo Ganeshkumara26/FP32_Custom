@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:48:46 2026
+# Process ID         : 17252
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project
+# Command line       : vivado.exe -mode batch -source run_vivado.tcl -tclargs fpu_divsqrt ./rtl/fpu_divsqrt.sv
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado.log
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7893 MB
+# Total Virtual      : 16256 MB
+# Available Virtual  : 4459 MB
+#-----------------------------------------------------------
+source run_vivado.tcl

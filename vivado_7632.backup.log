@@ -1,0 +1,485 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:25:51 2026
+# Process ID         : 7632
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project
+# Command line       : vivado.exe -mode batch -source run_vivado.tcl -tclargs fpu_mul ./rtl/fpu_mul.sv
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado.log
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7722 MB
+# Total Virtual      : 16085 MB
+# Available Virtual  : 3188 MB
+#-----------------------------------------------------------
+source run_vivado.tcl
+# set module [lindex $argv 0]
+# set src_file [lindex $argv 1]
+# set part [lindex [get_parts] 0]
+# create_project $module ./vivado_$module -part $part -force
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 581.270 ; gain = 266.188
+# add_files $src_file
+# add_files fpu_constraints.xdc
+# set_property target_constrs_file fpu_constraints.xdc [current_fileset -constrset]
+Adding file 'D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc' to fileset 'constrs_1'
+# set_property top $module [current_fileset]
+# update_compile_order -fileset sources_1
+# set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY rebuilt [get_runs synth_1]
+# launch_runs synth_1 -jobs 4
+[Wed Sep 30 20:26:25 2026] Launched synth_1...
+Run output will be captured here: D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Wed Sep 30 20:26:25 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log fpu_mul.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_mul.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:26:31 2026
+# Process ID         : 14700
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1
+# Command line       : vivado.exe -log fpu_mul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_mul.tcl
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1/fpu_mul.vds
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7722 MB
+# Total Virtual      : 16085 MB
+# Available Virtual  : 3214 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 30 20:26:31 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpu_mul.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 586.535 ; gain = 271.121
+WARNING: [filemgmt 56-128] File 'D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc' is already in the project and will not be added again
+Command: synth_design -top fpu_mul -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1334.836 ; gain = 577.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpu_mul' [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_mul.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mul' (0#1) [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_mul.sv:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 1457.941 ; gain = 700.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 1457.941 ; gain = 700.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 1457.941 ; gain = 700.992
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1457.941 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1529.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1530.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:01:22 . Memory (MB): peak = 1530.234 ; gain = 773.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:01:22 . Memory (MB): peak = 1530.234 ; gain = 773.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:01:22 . Memory (MB): peak = 1530.234 ; gain = 773.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:01:26 . Memory (MB): peak = 1530.234 ; gain = 773.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   25 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 3     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 48    
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP prod_s0, operation Mode is: A*B.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+DSP Report: Generating DSP prod_s0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[47]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[46]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[45]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[44]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[43]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[42]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[41]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[40]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[39]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[38]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[37]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[36]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[35]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[34]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[33]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[32]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[31]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[30]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[29]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[28]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[27]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[26]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[25]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[24]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[23]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[22]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[21]) is unused and will be removed from module fpu_mul.
+WARNING: [Syn---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:03:01 . Memory (MB): peak = 1982.520 ; gain = 1226.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:03:01 . Memory (MB): peak = 1982.520 ; gain = 1226.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:03:01 . Memory (MB): peak = 1982.520 ; gain = 1226.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:03:01 . Memory (MB): peak = 1982.520 ; gain = 1226.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:03:01 . Memory (MB): peak = 1982.520 ; gain = 1226.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+------------------------------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:01:42 . Memory (MB): peak = 1621.641 ; gain = 864.691
+---------------------------------------------------------------------------------
+ Sort Area is  prod_s0_0 : 0 0 : 3446 4851 : Used 1 time 0
+ Sort Area is  prod_s0_0 : 0 1 : 1405 4851 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fpu_mul     | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fpu_mul     | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:02:01 . Memory (MB): peak = 1721.297 ; gain = 964.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:02:05 . Memory (MB): peak = 1780.672 ; gain = 1023.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:02:06 . Memory (MB): peak = 1780.715 ; gain = 1023.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening BeforNetlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 775.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fpu_divsqrt' is not ideal for floorplanning, since the cellview 'fpu_divsqrt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_i' already exists, overwriting the previous clock with the same name. [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:1]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 901.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 905.871 ; gain = 312.688
+# set_property STEPS.PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+# set_property STEPS.PLACE_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# set_property STEPS.PHYS_OPT_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# set_property STEPS.ROUTE_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 905.871 ; gain = 0.000
+[Wed Sep 30 20:29:55 2026] Launched impl_1...
+Run output will be captured here: D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.871 ; gain = 0.000
+# wait_on_run impl_1
+[Wed Sep 30 20:29:55 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log fpu_divsqrt.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fpu_divsqrt.tcl -notrace
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:30:09 2026
+# Process ID         : 13764
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1
+# Command line       : vivado.exe -log fpu_divsqrt.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpu_divsqrt.tcl -notrace
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/fpu_divsqrt.vdi
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7893 MB
+# Total Virtual      : 16256 MB
+# Available Virtual  : 1197 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 30 20:30:09 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpu_divsqrt.tcl -notrace
+Command: open_checkpoint D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/fpu_divsqrt.dcp
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 774.719 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fpu_divsqrt' is not ideal for floorplanning, since the cellview 'fpu_divsqrt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.303 . Memory (MB): peak = 858.812 ; gain = 0.109
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1371.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:01:03 . Memory (MB): peak = 1371.605 ; gain = 1056.609
+The application has run out of memory
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 20:31:24 2026...
+[Wed Sep 30 20:31:31 2026] impl_1 finished
+ERROR: [Vivado 12-13638] Failed runs(s) : 'impl_1'
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:36 . Memory (MB): peak = 905.871 ; gain = 0.000
+ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+
+    while executing
+"wait_on_run impl_1"
+    (file "run_vivado.tcl" line 30)
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 20:31:31 2026...
+e (s): cpu = 00:00:20 ; elapsed = 00:03:05 . Memory (MB): peak = 2031.281 ; gain = 1439.801
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2031.281 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1/fpu_mul.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpu_mul_utilization_synth.rpt -pb fpu_mul_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 20:30:06 2026...
+[Wed Sep 30 20:30:11 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:03:46 . Memory (MB): peak = 590.285 ; gain = 0.000
+# open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a12ticsg325-1L
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 771.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_i' already exists, overwriting the previous clock with the same name. [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:1]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 899.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 899.391 ; gain = 309.105
+# set_property STEPS.PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+# set_property STEPS.PLACE_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# set_property STEPS.PHYS_OPT_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# set_property STEPS.ROUTE_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 907.863 ; gain = 8.391
+[Wed Sep 30 20:30:22 2026] Launched impl_1...
+Run output will be captured here: D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/impl_1/runme.log
+# wait_on_run impl_1
+[Wed Sep 30 20:30:22 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log fpu_mul.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fpu_mul.tcl -notrace
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:30:33 2026
+# Process ID         : 1540
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/impl_1
+# Command line       : vivado.exe -log fpu_mul.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpu_mul.tcl -notrace
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/impl_1/fpu_mul.vdi
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7893 MB
+# Total Virtual      : 16256 MB
+# Available Virtual  : 1234 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 30 20:30:33 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpu_mul.tcl -notrace
+Command: open_checkpoint D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/impl_1/fpu_mul.dcp
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 775.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 858.926 ; gain = 0.137
+The application has run out of memory
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 20:31:25 2026...
+[Wed Sep 30 20:31:32 2026] impl_1 finished
+ERROR: [Vivado 12-13638] Failed runs(s) : 'impl_1'
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:11 . Memory (MB): peak = 910.836 ; gain = 0.000
+ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+
+    while executing
+"wait_on_run impl_1"
+    (file "run_vivado.tcl" line 30)
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 20:31:33 2026...

@@ -1,0 +1,100 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 14:34:17 2026
+# Process ID         : 13096
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3496 D:\Downloads\fpu_project_complete\fpu_project\vivado_fpu_add\fpu_add.xpr
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add/vivado.log
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7083 MB
+# Total Virtual      : 15446 MB
+# Available Virtual  : 2703 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_add/fpu_add.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1624.871 ; gain = 189.891
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 14:34:53 2026...
+n 17-206] Exiting Vivado at Wed Sep 30 14:34:37 2026...
+ build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/softwares/AMD/2026.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1726.020 ; gain = 321.391
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 14:34:45 2026...
+Common 17-344] 'tclapp::load_apps' was cancelled
+1
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1721.895 ; gain = 303.309
+INFO: [Common 17-344] 'open_project' was cancelled
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a12ticsg325-1L
+Top: fpu_add
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7476
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 2433.871 ; gain = 572.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpu_add' [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_add.sv:22]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_add.sv:530]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_add' (0#1) [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_add.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 2552.078 ; gain = 690.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 2552.078 ; gain = 690.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 2552.078 ; gain = 690.340
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2552.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'remove_from_collection' is not supported in the xdc constraint file. [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:6]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "non_clk_inputs": no such variable
+ [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:7]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_i' already exists, overwriting the previous clock with the same name. [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command 'remove_from_collection' is not supported in the xdc constraint file. [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:6]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "non_clk_inputs": no such variable
+ [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:7]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2566.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:41 . Memory (MB): peak = 2880.848 ; gain = 1019.109
+10 Infos, 1 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:47 . Memory (MB): peak = 2880.848 ; gain = 1129.090
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 14:38:28 2026...

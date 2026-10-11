@@ -1,0 +1,368 @@
+
+*** Running vivado
+    with args -log fpu_mul.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_mul.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:42:45 2026
+# Process ID         : 3528
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1
+# Command line       : vivado.exe -log fpu_mul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_mul.tcl
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1/fpu_mul.vds
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7893 MB
+# Total Virtual      : 16256 MB
+# Available Virtual  : 4132 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 30 20:42:45 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpu_mul.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 583.598 ; gain = 267.289
+WARNING: [filemgmt 56-128] File 'D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc' is already in the project and will not be added again
+Command: synth_design -top fpu_mul -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9376
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1338.246 ; gain = 578.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpu_mul' [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_mul.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mul' (0#1) [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_mul.sv:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1462.562 ; gain = 702.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1462.562 ; gain = 702.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1462.562 ; gain = 702.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1462.562 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1538.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1538.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:36 . Memory (MB): peak = 1538.359 ; gain = 778.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 1538.359 ; gain = 778.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 1538.359 ; gain = 778.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:38 . Memory (MB): peak = 1538.359 ; gain = 778.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   25 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 35    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 3     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 48    
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP prod_s0, operation Mode is: A*B.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+DSP Report: Generating DSP prod_s0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+DSP Report: operator prod_s0 is absorbed into DSP prod_s0.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[47]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[46]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[45]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[44]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[43]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[42]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[41]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[40]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[39]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[38]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[37]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[36]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[35]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[34]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[33]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[32]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[31]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[30]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[29]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[28]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[27]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[26]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[25]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[24]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[23]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[22]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[21]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[20]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[19]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[18]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[17]) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[47]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[46]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[45]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[44]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[43]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[42]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[41]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[40]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[39]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[38]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[37]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[36]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[35]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[34]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[33]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[32]__0) is unused and will be removed from module fpu_mul.
+WARNING: [Synth 8-3332] Sequential element (prod_s1_reg[31]__0) is unused and will be removed from module fpu_mul.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:53 . Memory (MB): peak = 1572.207 ; gain = 812.203
+---------------------------------------------------------------------------------
+ Sort Area is  prod_s0_0 : 0 0 : 3446 4851 : Used 1 time 0
+ Sort Area is  prod_s0_0 : 0 1 : 1405 4851 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fpu_mul     | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fpu_mul     | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1720.281 ; gain = 960.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:01:16 . Memory (MB): peak = 1745.383 ; gain = 985.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:01:16 . Memory (MB): peak = 1745.383 ; gain = 985.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:01:37 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:01:37 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:01:38 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:01:38 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:01:38 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:01:38 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fpu_mul     | valid_o_reg             | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fpu_mul     | result_is_zero_regC_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fpu_mul     | result_is_inf_regC_reg  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fpu_mul     | result_is_nan_regC_reg  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fpu_mul     | sign_r_regC_reg         | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fpu_mul     | invalid_regC_reg        | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fpu_mul     | A*B             | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fpu_mul     | (PCIN>>17+A*B)' | 24     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    22|
+|3     |DSP48E1 |     2|
+|5     |LUT1    |    13|
+|6     |LUT2    |    97|
+|7     |LUT3    |    56|
+|8     |LUT4    |    49|
+|9     |LUT5    |   100|
+|10    |LUT6    |   175|
+|11    |SRL16E  |     6|
+|12    |FDCE    |   219|
+|13    |FDRE    |     6|
+|14    |IBUF    |    67|
+|15    |OBUF    |    38|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:01:38 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:01:35 . Memory (MB): peak = 2008.828 ; gain = 1173.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:01:39 . Memory (MB): peak = 2008.828 ; gain = 1248.824
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2017.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2020.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ac427aa1
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+17 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:01:58 . Memory (MB): peak = 2020.641 ; gain = 1430.086
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2020.641 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_mul/fpu_mul.runs/synth_1/fpu_mul.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpu_mul_utilization_synth.rpt -pb fpu_mul_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 20:45:08 2026...

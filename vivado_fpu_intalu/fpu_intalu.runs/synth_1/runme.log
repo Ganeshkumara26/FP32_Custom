@@ -1,0 +1,263 @@
+
+*** Running vivado
+    with args -log fpu_intalu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_intalu.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 14:35:06 2026
+# Process ID         : 15928
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_intalu/fpu_intalu.runs/synth_1
+# Command line       : vivado.exe -log fpu_intalu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_intalu.tcl
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_intalu/fpu_intalu.runs/synth_1/fpu_intalu.vds
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_intalu/fpu_intalu.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7614 MB
+# Total Virtual      : 15976 MB
+# Available Virtual  : 5427 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 30 14:35:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpu_intalu.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 583.930 ; gain = 270.207
+WARNING: [filemgmt 56-128] File 'D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc' is already in the project and will not be added again
+Command: synth_design -top fpu_intalu -part xc7a12ticsg325-1L -global_retiming on
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1333.484 ; gain = 578.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpu_intalu' [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_intalu.sv:20]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_intalu.sv:104]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_intalu' (0#1) [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_intalu.sv:20]
+WARNING: [Synth 8-7129] Port clk_i in module fpu_intalu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module fpu_intalu is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 1453.613 ; gain = 699.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 1453.613 ; gain = 699.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 1453.613 ; gain = 699.039
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1453.613 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'remove_from_collection' is not supported in the xdc constraint file. [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:6]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "non_clk_inputs": no such variable
+ [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:7]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1524.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:42 . Memory (MB): peak = 1524.531 ; gain = 769.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:43 . Memory (MB): peak = 1524.531 ; gain = 769.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:44 . Memory (MB): peak = 1524.531 ; gain = 769.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:45 . Memory (MB): peak = 1524.531 ; gain = 769.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port clk_i in module fpu_intalu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module fpu_intalu is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1570.867 ; gain = 816.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:01:06 . Memory (MB): peak = 1668.980 ; gain = 914.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:06 . Memory (MB): peak = 1669.500 ; gain = 914.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `fpu_intalu`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `fpu_intalu' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:01:06 . Memory (MB): peak = 1688.660 ; gain = 934.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    34|
+|2     |LUT1   |    33|
+|3     |LUT2   |    67|
+|4     |LUT3   |    45|
+|5     |LUT4   |    45|
+|6     |LUT5   |    64|
+|7     |LUT6   |   169|
+|8     |MUXF7  |     1|
+|9     |IBUF   |    82|
+|10    |OBUF   |    35|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:01:15 . Memory (MB): peak = 1954.773 ; gain = 1129.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:01:18 . Memory (MB): peak = 1954.773 ; gain = 1200.199
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1963.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1967.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f2c9ea87
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+20 Infos, 5 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:01:29 . Memory (MB): peak = 1967.637 ; gain = 1376.781
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1967.637 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_intalu/fpu_intalu.runs/synth_1/fpu_intalu.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpu_intalu_utilization_synth.rpt -pb fpu_intalu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 14:36:51 2026...

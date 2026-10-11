@@ -1,0 +1,1244 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:48:46 2026
+# Process ID         : 17252
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project
+# Command line       : vivado.exe -mode batch -source run_vivado.tcl -tclargs fpu_divsqrt ./rtl/fpu_divsqrt.sv
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado.log
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7893 MB
+# Total Virtual      : 16256 MB
+# Available Virtual  : 4459 MB
+#-----------------------------------------------------------
+source run_vivado.tcl
+# set module [lindex $argv 0]
+# set src_file [lindex $argv 1]
+# set part [lindex [get_parts] 0]
+# create_project $module ./vivado_$module -part $part -force
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 583.500 ; gain = 268.734
+# add_files $src_file
+# add_files fpu_constraints.xdc
+# set_property target_constrs_file fpu_constraints.xdc [current_fileset -constrset]
+Adding file 'D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc' to fileset 'constrs_1'
+# set_property top $module [current_fileset]
+# update_compile_order -fileset sources_1
+# set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY rebuilt [get_runs synth_1]
+# launch_runs synth_1 -jobs 4
+[Wed Sep 30 20:49:11 2026] Launched synth_1...
+Run output will be captured here: D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Wed Sep 30 20:49:11 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log fpu_divsqrt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_divsqrt.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:49:14 2026
+# Process ID         : 6304
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/synth_1
+# Command line       : vivado.exe -log fpu_divsqrt.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_divsqrt.tcl
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/synth_1/fpu_divsqrt.vds
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7893 MB
+# Total Virtual      : 16256 MB
+# Available Virtual  : 3711 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 30 20:49:14 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpu_divsqrt.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 582.598 ; gain = 268.000
+WARNING: [filemgmt 56-128] File 'D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc' is already in the project and will not be added again
+Command: synth_design -top fpu_divsqrt -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a12ti'
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1208
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1332.812 ; gain = 576.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpu_divsqrt' [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_divsqrt.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_divsqrt' (0#1) [D:/Downloads/fpu_project_complete/fpu_project/rtl/fpu_divsqrt.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1459.109 ; gain = 703.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1459.109 ; gain = 703.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1459.109 ; gain = 703.129
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1459.109 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1531.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1532.363 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1532.363 ; gain = 776.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1532.363 ; gain = 776.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1532.363 ; gain = 776.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:44 . Memory (MB): peak = 1532.363 ; gain = 776.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   30 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   3 Input   26 Bit       Adders := 2     
+	   2 Input   25 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               54 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   54 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   30 Bit        Muxes := 2     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 4     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 53    
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:01:01 . Memory (MB): peak = 1658.723 ; gain = 902.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:01:13 . Memory (MB): peak = 1680.652 ; gain = 924.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1809.324 ; gain = 1053.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:01:25 . Memory (MB): peak = 1809.379 ; gain = 1053.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:01:34 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:01:34 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:01:35 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:01:35 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:01:35 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:01:35 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    55|
+|3     |LUT1   |    34|
+|4     |LUT2   |   210|
+|5     |LUT3   |   100|
+|6     |LUT4   |   137|
+|7     |LUT5   |   231|
+|8     |LUT6   |   296|
+|9     |FDCE   |   252|
+|10    |IBUF   |    68|
+|11    |OBUF   |    39|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:01:35 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:01:25 . Memory (MB): peak = 1986.973 ; gain = 1157.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:01:35 . Memory (MB): peak = 1986.973 ; gain = 1230.992
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1996.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fpu_divsqrt' is not ideal for floorplanning, since the cellview 'fpu_divsqrt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 82cc7a79
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:01:47 . Memory (MB): peak = 1999.871 ; gain = 1410.301
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/synth_1/fpu_divsqrt.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpu_divsqrt_utilization_synth.rpt -pb fpu_divsqrt_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 20:51:24 2026...
+[Wed Sep 30 20:51:26 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:02:16 . Memory (MB): peak = 592.086 ; gain = 0.000
+# open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a12ticsg325-1L
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 773.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fpu_divsqrt' is not ideal for floorplanning, since the cellview 'fpu_divsqrt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_i' already exists, overwriting the previous clock with the same name. [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc:1]
+Finished Parsing XDC File [D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 899.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 903.906 ; gain = 311.820
+# set_property STEPS.PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+# set_property STEPS.PLACE_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# set_property STEPS.PHYS_OPT_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# set_property STEPS.ROUTE_DESIGN.ARGS.DIRECTIVE Explore [get_runs impl_1]
+# launch_runs impl_1 -jobs 4
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 908.875 ; gain = 4.969
+INFO: [Timing 38-480] Writing timing data to binary archive.
+[Wed Sep 30 20:51:36 2026] Launched impl_1...
+Run output will be captured here: D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/runme.log
+# wait_on_run impl_1
+[Wed Sep 30 20:51:36 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log fpu_divsqrt.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fpu_divsqrt.tcl -notrace
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 24-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 30 20:51:45 2026
+# Process ID         : 16676
+# Current directory  : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1
+# Command line       : vivado.exe -log fpu_divsqrt.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpu_divsqrt.tcl -notrace
+# Log file           : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/fpu_divsqrt.vdi
+# Journal file       : D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-16MV5P3N
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8362 MB
+# Swap memory        : 7893 MB
+# Total Virtual      : 16256 MB
+# Available Virtual  : 4358 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Sep 30 20:51:45 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpu_divsqrt.tcl -notrace
+Command: open_checkpoint D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/fpu_divsqrt.dcp
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 774.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fpu_divsqrt' is not ideal for floorplanning, since the cellview 'fpu_divsqrt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 858.332 ; gain = 0.211
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1370.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:47 . Memory (MB): peak = 1370.527 ; gain = 1054.539
+Command: opt_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7a12ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1379.742 ; gain = 9.215
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1471.859 ; gain = 92.117
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1964.898 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1964.898 ; gain = 0.000
+Phase 1 Initialization | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1964.898 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1964.922 ; gain = 0.023
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1964.922 ; gain = 0.023
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Phase 2 Timer Update And Timing Data Collection | Checksum: 15e6587e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1964.922 ; gain = 0.023
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 14 inverters resulting in an inversion of 136 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 20f7d50f6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.293 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Retarget | Checksum: 20f7d50f6
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 14 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1521e3098
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.323 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Constant propagation | Checksum: 1521e3098
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1eaa814dd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.356 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Sweep | Checksum: 1eaa814dd
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1eaa814dd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.404 . Memory (MB): peak = 1964.922 ; gain = 0.023
+BUFG optimization | Checksum: 1eaa814dd
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1eaa814dd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.412 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Shift Register Optimization | Checksum: 1eaa814dd
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1eaa814dd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.422 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Post Processing Netlist | Checksum: 1eaa814dd
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 20f5ad5f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.497 . Memory (MB): peak = 1964.922 ; gain = 0.023
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 20f5ad5f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.625 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Phase 9 Finalization | Checksum: 20f5ad5f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.626 . Memory (MB): peak = 1964.922 ; gain = 0.023
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |              14  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 20f5ad5f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.755 . Memory (MB): peak = 1964.922 ; gain = 0.023
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 20f5ad5f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 20f5ad5f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+32 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1964.922 ; gain = 594.395
+INFO: [Vivado 12-24828] Executing command : report_drc -file fpu_divsqrt_drc_opted.rpt -pb fpu_divsqrt_drc_opted.pb -rpx fpu_divsqrt_drc_opted.rpx
+Command: report_drc -file fpu_divsqrt_drc_opted.rpt -pb fpu_divsqrt_drc_opted.pb -rpx fpu_divsqrt_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/softwares/AMD/2026.1/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/fpu_divsqrt_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1964.922 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/fpu_divsqrt_opt.dcp' has been generated.
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7a12ti'
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Vivado_Tcl 4-2302] The placer was invoked with the 'Explore' directive.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 163ea1b75
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17bea36d4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1dc62d319
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1dc62d319
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1dc62d319
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1eaee12cc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2799c8963
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 246bd6a41
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 25d09623b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1c5b20d09
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 11 LUTNM shape to break, 20 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 10, two critical 1, total 11, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 18 nets or LUTs. Breaked 11 LUTs, combined 7 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           11  |              7  |                    18  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           11  |              7  |                    18  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2c3665e65
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 3032664fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 3032664fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2cfe7deec
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2385dfe3b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 3189370a8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 255ca382e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 28a901b32
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1b2aa285b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1877e6506
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1d63c0845
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1d63c0845
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1a22ca1d1
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.867 | TNS=-231.633 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1ca0da966
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 17e527c03
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1a22ca1d1
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.738. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 22a927ab9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:56 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:56 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 22a927ab9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:56 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 22a927ab9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:56 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 22a927ab9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:56 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 22a927ab9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:56 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:56 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 298d2a13c
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:57 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Ending Placer Task | Checksum: 1f75f3649
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:01:57 . Memory (MB): peak = 1964.922 ; gain = 0.000
+75 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:21 ; elapsed = 00:01:58 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file fpu_divsqrt_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.325 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpu_divsqrt_utilization_placed.rpt -pb fpu_divsqrt_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file fpu_divsqrt_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.360 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/fpu_project_complete/fpu_project/vivado_fpu_divsqrt/fpu_divsqrt.runs/impl_1/fpu_divsqrt_placed.dcp' has been generated.
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7a12ti'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.371 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.44s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.738 | TNS=-178.903 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1d90e7b07
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 2 SLR Crossing Optimization
+Phase 2 SLR Crossing Optimization | Checksum: 1d90e7b07
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.245 . Memory (MB): peak = 1964.922 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.738 | TNS=-178.903 |
+
+Phase 3 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 5 candidate nets for fanout optimization.
+INFO: [Physopt 32-572] Net result_r[30]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_7_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net result_r[22]_i_9_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net div_Q_r_reg_n_0_[26] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net total_r[0]. Replicated 3 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 3 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 3 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.738 | TNS=-178.903 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 3 Fanout Optimization | Checksum: 12e979540
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 4 Single Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 207 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net result_r[30]_i_2_n_0.  Did not re-place instance result_r[30]_i_2
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[1].  Re-placed instance exp_result_r_reg[1]
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_3_n_0.  Did not re-place instance flags_r[1]_i_3
+INFO: [Physopt 32-662] Processed net result_r[26]_i_5_n_0.  Did not re-place instance result_r[26]_i_5
+INFO: [Physopt 32-662] Processed net result_r[30]_i_8_n_0.  Did not re-place instance result_r[30]_i_8
+INFO: [Physopt 32-662] Processed net result_r[27]_i_3_n_0.  Did not re-place instance result_r[27]_i_3
+INFO: [Physopt 32-662] Processed net result_r[28]_i_3_n_0.  Did not re-place instance result_r[28]_i_3
+INFO: [Physopt 32-662] Processed net result_r[30]_i_11_n_0.  Did not re-place instance result_r[30]_i_11
+INFO: [Physopt 32-662] Processed net result_r[30]_i_5_n_0.  Did not re-place instance result_r[30]_i_5
+INFO: [Physopt 32-662] Processed net final_result_comb[26].  Did not re-place instance result_r[26]_i_1
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_100_n_0.  Did not re-place instance flags_r[1]_i_100
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_109_n_0.  Did not re-place instance flags_r[1]_i_109
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_11_n_0.  Did not re-place instance flags_r[1]_i_11
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_30_n_0.  Did not re-place instance flags_r[1]_i_30
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_79_n_0.  Did not re-place instance flags_r[1]_i_79
+INFO: [Physopt 32-662] Processed net result_o_OBUF[26].  Did not re-place instance result_r_reg[26]
+INFO: [Physopt 32-662] Processed net result_r[22]_i_22_n_0.  Did not re-place instance result_r[22]_i_22
+INFO: [Physopt 32-662] Processed net result_r[22]_i_28_n_0.  Did not re-place instance result_r[22]_i_28
+INFO: [Physopt 32-662] Processed net result_r[26]_i_8_n_0.  Did not re-place instance result_r[26]_i_8
+INFO: [Physopt 32-662] Processed net result_r[3]_i_7_n_0.  Did not re-place instance result_r[3]_i_7
+INFO: [Physopt 32-662] Processed net final_result_comb[15].  Did not re-place instance result_r[15]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[15].  Did not re-place instance result_r_reg[15]
+INFO: [Physopt 32-662] Processed net final_result_comb[18].  Did not re-place instance result_r[18]_i_1
+INFO: [Physopt 32-662] Processed net final_result_comb[20].  Did not re-place instance result_r[20]_i_1
+INFO: [Physopt 32-662] Processed net final_result_comb[21].  Did not re-place instance result_r[21]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[18].  Did not re-place instance result_r_reg[18]
+INFO: [Physopt 32-662] Processed net result_o_OBUF[20].  Did not re-place instance result_r_reg[20]
+INFO: [Physopt 32-662] Processed net result_o_OBUF[21].  Did not re-place instance result_r_reg[21]
+INFO: [Physopt 32-662] Processed net final_result_comb[12].  Did not re-place instance result_r[12]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[12].  Did not re-place instance result_r_reg[12]
+INFO: [Physopt 32-662] Processed net final_result_comb[1].  Did not re-place instance result_r[1]_i_1
+INFO: [Physopt 32-662] Processed net final_result_comb[7].  Did not re-place instance result_r[7]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[1].  Did not re-place instance result_r_reg[1]
+INFO: [Physopt 32-662] Processed net result_o_OBUF[7].  Did not re-place instance result_r_reg[7]
+INFO: [Physopt 32-662] Processed net result_r[22]_i_26_n_0.  Did not re-place instance result_r[22]_i_26
+INFO: [Physopt 32-662] Processed net final_result_comb[16].  Did not re-place instance result_r[16]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[16].  Did not re-place instance result_r_reg[16]
+INFO: [Physopt 32-662] Processed net final_result_comb[17].  Did not re-place instance result_r[17]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[17].  Did not re-place instance result_r_reg[17]
+INFO: [Physopt 32-662] Processed net final_result_comb[4].  Did not re-place instance result_r[4]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[4].  Did not re-place instance result_r_reg[4]
+INFO: [Physopt 32-662] Processed net final_result_comb[19].  Did not re-place instance result_r[19]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[19].  Did not re-place instance result_r_reg[19]
+INFO: [Physopt 32-662] Processed net final_result_comb[8].  Did not re-place instance result_r[8]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[8].  Did not re-place instance result_r_reg[8]
+INFO: [Physopt 32-662] Processed net final_result_comb[10].  Did not re-place instance result_r[10]_i_1
+INFO: [Physopt 32-662] Processed net final_result_comb[2].  Did not re-place instance result_r[2]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[10].  Did not re-place instance result_r_reg[10]
+INFO: [Physopt 32-662] Processed net result_o_OBUF[2].  Did not re-place instance result_r_reg[2]
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[0].  Re-placed instance exp_result_r_reg[0]
+INFO: [Physopt 32-662] Processed net result_r[26]_i_9_n_0.  Did not re-place instance result_r[26]_i_9
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_7_n_0.  Did not re-place instance flags_r[1]_i_7
+INFO: [Physopt 32-662] Processed net final_result_comb[6].  Did not re-place instance result_r[6]_i_1
+INFO: [Physopt 32-662] Processed net flags_o_OBUF[2].  Did not re-place instance flags_r_reg[2]
+INFO: [Physopt 32-662] Processed net flags_r[2]_i_1_n_0.  Did not re-place instance flags_r[2]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[6].  Did not re-place instance result_r_reg[6]
+INFO: [Physopt 32-662] Processed net final_result_comb[0].  Did not re-place instance result_r[0]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[0].  Did not re-place instance result_r_reg[0]
+INFO: [Physopt 32-662] Processed net final_result_comb[13].  Did not re-place instance result_r[13]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[13].  Did not re-place instance result_r_reg[13]
+INFO: [Physopt 32-662] Processed net final_result_comb[5].  Did not re-place instance result_r[5]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[5].  Did not re-place instance result_r_reg[5]
+INFO: [Physopt 32-662] Processed net result_r[22]_i_27_n_0.  Did not re-place instance result_r[22]_i_27
+INFO: [Physopt 32-662] Processed net final_result_comb[25].  Did not re-place instance result_r[25]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[25].  Did not re-place instance result_r_reg[25]
+INFO: [Physopt 32-662] Processed net final_result_comb[11].  Did not re-place instance result_r[11]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[11].  Did not re-place instance result_r_reg[11]
+INFO: [Physopt 32-662] Processed net final_result_comb[24].  Did not re-place instance result_r[24]_i_1
+INFO: [Physopt 32-662] Processed net final_result_comb[9].  Did not re-place instance result_r[9]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[24].  Did not re-place instance result_r_reg[24]
+INFO: [Physopt 32-662] Processed net result_o_OBUF[9].  Did not re-place instance result_r_reg[9]
+INFO: [Physopt 32-662] Processed net final_result_comb[3].  Did not re-place instance result_r[3]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[3].  Did not re-place instance result_r_reg[3]
+INFO: [Physopt 32-662] Processed net result_r[22]_i_34_n_0.  Did not re-place instance result_r[22]_i_34
+INFO: [Physopt 32-662] Processed net final_result_comb[14].  Did not re-place instance result_r[14]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[14].  Did not re-place instance result_r_reg[14]
+INFO: [Physopt 32-662] Processed net final_flags_comb[0].  Did not re-place instance flags_r[0]_i_1
+INFO: [Physopt 32-662] Processed net flags_o_OBUF[0].  Did not re-place instance flags_r_reg[0]
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_68_n_0.  Did not re-place instance flags_r[1]_i_68
+INFO: [Physopt 32-662] Processed net result_r[22]_i_31_n_0.  Did not re-place instance result_r[22]_i_31
+INFO: [Physopt 32-662] Processed net result_r[22]_i_25_n_0.  Did not re-place instance result_r[22]_i_25
+INFO: [Physopt 32-662] Processed net final_result_comb[30].  Did not re-place instance result_r[30]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[30].  Did not re-place instance result_r_reg[30]
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_36_n_0.  Did not re-place instance flags_r[1]_i_36
+INFO: [Physopt 32-662] Processed net final_result_comb[27].  Did not re-place instance result_r[27]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[27].  Did not re-place instance result_r_reg[27]
+INFO: [Physopt 32-662] Processed net final_result_comb[22].  Did not re-place instance result_r[22]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[22].  Did not re-place instance result_r_reg[22]
+INFO: [Physopt 32-662] Processed net final_result_comb[23].  Did not re-place instance result_r[23]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[23].  Did not re-place instance result_r_reg[23]
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[3].  Re-placed instance exp_result_r_reg[3]
+INFO: [Physopt 32-662] Processed net result_r[26]_i_6_n_0.  Did not re-place instance result_r[26]_i_6
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_25_n_0.  Did not re-place instance flags_r[1]_i_25
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_37_n_0.  Did not re-place instance flags_r[1]_i_37
+INFO: [Physopt 32-662] Processed net result_r[22]_i_41_n_0.  Did not re-place instance result_r[22]_i_41
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[2].  Re-placed instance exp_result_r_reg[2]
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_2_n_0.  Did not re-place instance flags_r[1]_i_2
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_28_n_0.  Did not re-place instance flags_r[1]_i_28
+INFO: [Physopt 32-663] Processed net flags_r[1]_i_74_n_0.  Re-placed instance flags_r[1]_i_74
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_8_n_0.  Did not re-place instance flags_r[1]_i_8
+INFO: [Physopt 32-662] Processed net result_r[22]_i_21_n_0.  Did not re-place instance result_r[22]_i_21
+INFO: [Physopt 32-662] Processed net result_r[22]_i_23_n_0.  Did not re-place instance result_r[22]_i_23
+INFO: [Physopt 32-662] Processed net result_r[22]_i_9_n_0.  Did not re-place instance result_r[22]_i_9
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_29_n_0.  Did not re-place instance flags_r[1]_i_29
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_76_n_0.  Did not re-place instance flags_r[1]_i_76
+INFO: [Physopt 32-662] Processed net div_Q_r_reg_n_0_[26].  Did not re-place instance div_Q_r_reg[26]
+INFO: [Physopt 32-662] Processed net result_r[3]_i_15_n_0.  Did not re-place instance result_r[3]_i_15
+INFO: [Physopt 32-662] Processed net result_r[3]_i_3_n_0.  Did not re-place instance result_r[3]_i_3
+INFO: [Physopt 32-662] Processed net result_r[3]_i_8_n_0.  Did not re-place instance result_r[3]_i_8
+INFO: [Physopt 32-662] Processed net result_r[7]_i_19_n_0.  Did not re-place instance result_r[7]_i_19
+INFO: [Physopt 32-662] Processed net result_r[7]_i_20_n_0.  Did not re-place instance result_r[7]_i_20
+INFO: [Physopt 32-663] Processed net result_r[25]_i_2_n_0.  Re-placed instance result_r[25]_i_2
+INFO: [Physopt 32-662] Processed net result_r[30]_i_9_n_0.  Did not re-place instance result_r[30]_i_9
+INFO: [Physopt 32-663] Processed net result_r[27]_i_2_n_0.  Re-placed instance result_r[27]_i_2
+INFO: [Physopt 32-662] Processed net result_r[22]_i_20_n_0.  Did not re-place instance result_r[22]_i_20
+INFO: [Physopt 32-662] Processed net result_r[26]_i_7_n_0.  Did not re-place instance result_r[26]_i_7
+INFO: [Physopt 32-662] Processed net final_result_comb[28].  Did not re-place instance result_r[28]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[28].  Did not re-place instance result_r_reg[28]
+INFO: [Physopt 32-663] Processed net flags_r[1]_i_101_n_0.  Re-placed instance flags_r[1]_i_101
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_13_n_0.  Did not re-place instance flags_r[1]_i_13
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_43_n_0.  Did not re-place instance flags_r[1]_i_43
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_86_n_0.  Did not re-place instance flags_r[1]_i_86
+INFO: [Physopt 32-663] Processed net flags_r[1]_i_12_n_0.  Re-placed instance flags_r[1]_i_12
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_34_n_0.  Did not re-place instance flags_r[1]_i_34
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[6].  Re-placed instance exp_result_r_reg[6]
+INFO: [Physopt 32-662] Processed net result_r[30]_i_15_n_0.  Did not re-place instance result_r[30]_i_15
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_72_n_0.  Did not re-place instance flags_r[1]_i_72
+INFO: [Physopt 32-662] Processed net result_r[22]_i_35_n_0.  Did not re-place instance result_r[22]_i_35
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_104_n_0.  Did not re-place instance flags_r[1]_i_104
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_88_n_0.  Did not re-place instance flags_r[1]_i_88
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_71_n_0.  Did not re-place instance flags_r[1]_i_71
+INFO: [Physopt 32-662] Processed net result_r[22]_i_32_n_0.  Did not re-place instance result_r[22]_i_32
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_9_n_0.  Did not re-place instance flags_r[1]_i_9
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_75_n_0.  Did not re-place instance flags_r[1]_i_75
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_14_n_0.  Did not re-place instance flags_r[1]_i_14
+INFO: [Physopt 32-663] Processed net flags_r[1]_i_44_n_0.  Re-placed instance flags_r[1]_i_44
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[7].  Re-placed instance exp_result_r_reg[7]
+INFO: [Physopt 32-662] Processed net final_result_comb[29].  Did not re-place instance result_r[29]_i_1
+INFO: [Physopt 32-662] Processed net result_o_OBUF[29].  Did not re-place instance result_r_reg[29]
+INFO: [Physopt 32-662] Processed net result_r[29]_i_2_n_0.  Did not re-place instance result_r[29]_i_2
+INFO: [Physopt 32-662] Processed net result_r[30]_i_14_n_0.  Did not re-place instance result_r[30]_i_14
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_70_n_0.  Did not re-place instance flags_r[1]_i_70
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_69_n_0.  Did not re-place instance flags_r[1]_i_69
+INFO: [Physopt 32-662] Processed net result_r[22]_i_36_n_0.  Did not re-place instance result_r[22]_i_36
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_66_n_0.  Did not re-place instance flags_r[1]_i_66
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_22_n_0.  Did not re-place instance flags_r[1]_i_22
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_64_n_0.  Did not re-place instance flags_r[1]_i_64
+INFO: [Physopt 32-662] Processed net exp_result_r_reg_n_0_[5].  Did not re-place instance exp_result_r_reg[5]
+INFO: [Physopt 32-662] Processed net result_r[30]_i_16_n_0.  Did not re-place instance result_r[30]_i_16
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_84_n_0.  Did not re-place instance flags_r[1]_i_84
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_31_n_0.  Did not re-place instance flags_r[1]_i_31
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_80_n_0.  Did not re-place instance flags_r[1]_i_80
+INFO: [Physopt 32-662] Processed net exp_result_r_reg_n_0_[4].  Did not re-place instance exp_result_r_reg[4]
+INFO: [Physopt 32-662] Processed net result_r[30]_i_17_n_0.  Did not re-place instance result_r[30]_i_17
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_67_n_0.  Did not re-place instance flags_r[1]_i_67
+INFO: [Physopt 32-663] Processed net result_r[22]_i_8_n_0.  Re-placed instance result_r[22]_i_8
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_6_n_0.  Did not re-place instance flags_r[1]_i_6
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_24_n_0.  Did not re-place instance flags_r[1]_i_24
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_23_n_0.  Did not re-place instance flags_r[1]_i_23
+INFO: [Physopt 32-662] Processed net result_r[22]_i_42_n_0.  Did not re-place instance result_r[22]_i_42
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_103_n_0.  Did not re-place instance flags_r[1]_i_103
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_102_n_0.  Did not re-place instance flags_r[1]_i_102
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_38_n_0.  Did not re-place instance flags_r[1]_i_38
+INFO: [Physopt 32-663] Processed net flags_r[1]_i_89_n_0.  Re-placed instance flags_r[1]_i_89
+INFO: [Physopt 32-662] Processed net result_r[22]_i_40_n_0.  Did not re-place instance result_r[22]_i_40
+INFO: [Physopt 32-662] Processed net result_r[30]_i_12_n_0.  Did not re-place instance result_r[30]_i_12
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[8].  Re-placed instance exp_result_r_reg[8]
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_99_n_0.  Did not re-place instance flags_r[1]_i_99
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_26_n_0.  Did not re-place instance flags_r[1]_i_26
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_73_n_0.  Did not re-place instance flags_r[1]_i_73
+INFO: [Physopt 32-662] Processed net result_r[28]_i_2_n_0.  Did not re-place instance result_r[28]_i_2
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_33_n_0.  Did not re-place instance flags_r[1]_i_33
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_41_n_0.  Did not re-place instance flags_r[1]_i_41
+INFO: [Physopt 32-663] Processed net exp_result_r_reg_n_0_[9].  Re-placed instance exp_result_r_reg[9]
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_98_n_0.  Did not re-place instance flags_r[1]_i_98
+INFO: [Physopt 32-662] Processed net result_r[3]_i_12_n_0.  Did not re-place instance result_r[3]_i_12
+INFO: [Physopt 32-662] Processed net result_r[3]_i_6_n_0.  Did not re-place instance result_r[3]_i_6
+INFO: [Physopt 32-662] Processed net result_r[22]_i_39_n_0.  Did not re-place instance result_r[22]_i_39
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_32_n_0.  Did not re-place instance flags_r[1]_i_32
+INFO: [Physopt 32-663] Processed net flags_r[1]_i_82_n_0.  Re-placed instance flags_r[1]_i_82
+INFO: [Physopt 32-662] Processed net result_r[22]_i_37_n_0.  Did not re-place instance result_r[22]_i_37
+INFO: [Physopt 32-663] Processed net result_r[7]_i_18_n_0.  Re-placed instance result_r[7]_i_18
+INFO: [Physopt 32-662] Processed net result_r[3]_i_10_n_0.  Did not re-place instance result_r[3]_i_10
+INFO: [Physopt 32-662] Processed net result_r[3]_i_4_n_0.  Did not re-place instance result_r[3]_i_4
+INFO: [Physopt 32-662] Processed net result_r[3]_i_5_n_0.  Did not re-place instance result_r[3]_i_5
+INFO: [Physopt 32-662] Processed net result_r[22]_i_33_n_0.  Did not re-place instance result_r[22]_i_33
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_81_n_0.  Did not re-place instance flags_r[1]_i_81
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_83_n_0.  Did not re-place instance flags_r[1]_i_83
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_78_n_0.  Did not re-place instance flags_r[1]_i_78
+INFO: [Physopt 32-663] Processed net result_r[7]_i_16_n_0.  Re-placed instance result_r[7]_i_16
+INFO: [Physopt 32-663] Processed net result_r[7]_i_9_n_0.  Re-placed instance result_r[7]_i_9
+INFO: [Physopt 32-662] Processed net result_r[7]_i_5_n_0.  Did not re-place instance result_r[7]_i_5
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_87_n_0.  Did not re-place instance flags_r[1]_i_87
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_77_n_0.  Did not re-place instance flags_r[1]_i_77
+INFO: [Physopt 32-662] Processed net result_r[7]_i_11_n_0.  Did not re-place instance result_r[7]_i_11
+INFO: [Physopt 32-662] Processed net result_r[7]_i_15_n_0.  Did not re-place instance result_r[7]_i_15
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_39_n_0.  Did not re-place instance flags_r[1]_i_39
+INFO: [Physopt 32-662] Processed net result_r[7]_i_6_n_0.  Did not re-place instance result_r[7]_i_6
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_42_n_0.  Did not re-place instance flags_r[1]_i_42
+INFO: [Physopt 32-662] Processed net result_r[7]_i_13_n_0.  Did not re-place instance result_r[7]_i_13
+INFO: [Physopt 32-662] Processed net result_r[7]_i_4_n_0.  Did not re-place instance result_r[7]_i_4
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_55_n_0.  Did not re-place instance flags_r[1]_i_55
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_85_n_0.  Did not re-place instance flags_r[1]_i_85
+INFO: [Physopt 32-663] Processed net result_r[7]_i_17_n_0.  Re-placed instance result_r[7]_i_17
+INFO: [Physopt 32-663] Processed net flags_r[1]_i_65_n_0.  Re-placed instance flags_r[1]_i_65
+INFO: [Physopt 32-663] Processed net result_r[11]_i_18_n_0.  Re-placed instance result_r[11]_i_18
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_60_n_0.  Did not re-place instance flags_r[1]_i_60
+INFO: [Physopt 32-661] Optimized 23 nets.  Re-placed 23 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 23 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 23 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.651 | TNS=-175.945 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 4 Single Cell Placement Optimization | Checksum: b37a3ef5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 5 Multi Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net exp_result_r_reg_n_0_[0].  Did not re-place instance exp_result_r_reg[0]/Q
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_3_n_0.  Did not re-place instance flags_r[1]_i_3/O
+INFO: [Physopt 32-662] Processed net result_r[26]_i_5_n_0.  Did not re-place instance result_r[26]_i_5/O
+INFO: [Physopt 32-662] Processed net result_r[30]_i_8_n_0.  Did not re-place instance result_r[30]_i_8/O
+INFO: [Physopt 32-662] Processed net result_r[27]_i_3_n_0.  Did not re-place instance result_r[27]_i_3/O
+INFO: [Physopt 32-662] Processed net result_r[28]_i_3_n_0.  Did not re-place instance result_r[28]_i_3/O
+INFO: [Physopt 32-662] Processed net result_r[30]_i_11_n_0.  Did not re-place instance result_r[30]_i_11/O
+INFO: [Physopt 32-662] Processed net result_r[30]_i_5_n_0.  Did not re-place instance result_r[30]_i_5/O
+INFO: [Physopt 32-662] Processed net final_result_comb[26].  Did not re-place instance result_r[26]_i_1/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_100_n_0.  Did not re-place instance flags_r[1]_i_100/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_109_n_0.  Did not re-place instance flags_r[1]_i_109/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_11_n_0.  Did not re-place instance flags_r[1]_i_11/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_30_n_0.  Did not re-place instance flags_r[1]_i_30/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_79_n_0.  Did not re-place instance flags_r[1]_i_79/O
+INFO: [Physopt 32-662] Processed net final_result_comb[15].  Did not re-place instance result_r[15]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[18].  Did not re-place instance result_r[18]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[20].  Did not re-place instance result_r[20]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[21].  Did not re-place instance result_r[21]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[12].  Did not re-place instance result_r[12]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[1].  Did not re-place instance result_r[1]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[7].  Did not re-place instance result_r[7]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[16].  Did not re-place instance result_r[16]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[17].  Did not re-place instance result_r[17]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[4].  Did not re-place instance result_r[4]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[19].  Did not re-place instance result_r[19]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[8].  Did not re-place instance result_r[8]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[10].  Did not re-place instance result_r[10]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[2].  Did not re-place instance result_r[2]_i_1/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_7_n_0.  Did not re-place instance flags_r[1]_i_7/O
+INFO: [Physopt 32-662] Processed net final_result_comb[6].  Did not re-place instance result_r[6]_i_1/O
+INFO: [Physopt 32-662] Processed net flags_r[2]_i_1_n_0.  Did not re-place instance flags_r[2]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[0].  Did not re-place instance result_r[0]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[13].  Did not re-place instance result_r[13]_i_1/O
+INFO: [Physopt 32-662] Processed net exp_result_r_reg_n_0_[1].  Did not re-place instance exp_result_r_reg[1]/Q
+INFO: [Physopt 32-662] Processed net final_result_comb[5].  Did not re-place instance result_r[5]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[25].  Did not re-place instance result_r[25]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[11].  Did not re-place instance result_r[11]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[24].  Did not re-place instance result_r[24]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[9].  Did not re-place instance result_r[9]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[3].  Did not re-place instance result_r[3]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[14].  Did not re-place instance result_r[14]_i_1/O
+INFO: [Physopt 32-662] Processed net final_flags_comb[0].  Did not re-place instance flags_r[0]_i_1/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_68_n_0.  Did not re-place instance flags_r[1]_i_68/O
+INFO: [Physopt 32-662] Processed net final_result_comb[30].  Did not re-place instance result_r[30]_i_1/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_36_n_0.  Did not re-place instance flags_r[1]_i_36/O
+INFO: [Physopt 32-662] Processed net final_result_comb[27].  Did not re-place instance result_r[27]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[22].  Did not re-place instance result_r[22]_i_1/O
+INFO: [Physopt 32-662] Processed net final_result_comb[23].  Did not re-place instance result_r[23]_i_1/O
+INFO: [Physopt 32-662] Processed net exp_result_r_reg_n_0_[2].  Did not re-place instance exp_result_r_reg[2]/Q
+INFO: [Physopt 32-662] Processed net div_Q_r_reg_n_0_[26].  Did not re-place instance div_Q_r_reg[26]/Q
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_25_n_0.  Did not re-place instance flags_r[1]_i_25/O
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_37_n_0.  Did not re-place instance flags_r[1]_i_37/O
+INFO: [Physopt 32-662] Processed net exp_result_r_reg_n_0_[3].  Did not re-place instance exp_result_r_reg[3]/Q
+INFO: [Physopt 32-662] Processed net flags_r[1]_i_2_n_0.  Did not re-place instance flags_r[1]_i_2/O
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 5 Multi Cell Placement Optimization | Checksum: afc57659
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:35 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 6 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-77] Pass 1. Identified 2 candidate nets for rewire optimization.
+INFO: [Physopt 32-134] Processed net result_r[30]_i_8_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-134] Processed net result_r[28]_i_2_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1964.922 ; gain = 0.000
+Phase 6 Rewire | Checksum: edb6e805
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:36 . Memory (MB): peak = 1964.922 ; gain = 0.000
+
+Phase 7 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 30 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net exp_result_r_reg_n_0_[0]. Replicated 1 times.
+INFO: [Physopt 32-572] Net flags_r[1]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net result_r[26]_i_5_n_0. Replicated 1 times.
+INFO: [Physopt 32-572] Net result_r[30]_i_8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net result_r[27]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net result_r[28]_i_3_n_0. Replicated 1 times.
+INFO: [Physopt 32-572] Net result_r[30]_i_11_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net result_r[30]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net exp_result_r_reg_n_0_[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_68_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_36_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net exp_result_r_reg_n_0_[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_25_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net exp_result_r_reg_n_0_[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_28_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net flags_r[1]_i_74_n_0. Replicated 1 times.
+INFO: [Physopt 32-572] Net flags_r[1]_i_8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_29_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_76_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net result_r[3]_i_15_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net result_r[3]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net result_r[3]_i_8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net result_r[7]_i_19_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net exp_result_r_reg_n_0_[5]. Replicated 1 times.
+INFO: [Physopt 32-572] Net flags_r[1]_i_9_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net exp_result_r_reg_n_0_[4] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net flags_r[1]_i_75_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.

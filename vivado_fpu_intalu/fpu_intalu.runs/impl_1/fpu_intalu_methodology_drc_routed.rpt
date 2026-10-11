@@ -1,0 +1,296 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Sep 30 14:38:38 2026
+| Host         : LAPTOP-16MV5P3N running 64-bit major release  (build 9200)
+| Command      : report_methodology -file fpu_intalu_methodology_drc_routed.rpt -pb fpu_intalu_methodology_drc_routed.pb -rpx fpu_intalu_methodology_drc_routed.rpx
+| Design       : fpu_intalu
+| Device       : xc7a12ticsg325-1L
+| Speed File   : -1L
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_fpu_intalu
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 37
++--------+----------+------------------------------------------------------+--------+
+| Rule   | Severity | Description                                          | Checks |
++--------+----------+------------------------------------------------------+--------+
+| XDCC-4 | Warning  | User Clock constraint overwritten with the same name | 1      |
+| XDCC-8 | Warning  | User Clock constraint overwritten on the same source | 1      |
+| XDCH-2 | Warning  | Same min and max delay values on IO port             | 35     |
++--------+----------+------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+XDCC-4#1 Warning
+User Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous user clock constraint with the same name.
+New: create_clock -period 10.000 -name clk_i [get_ports -quiet clk_i] (Source: D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 1))
+Previous: create_clock -period 10.000 -name clk_i [get_ports -quiet clk_i] (Source: D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-8#1 Warning
+User Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous user clock constraint defined on the same source.
+New: create_clock -period 10.000 -name clk_i [get_ports -quiet clk_i] (Source: D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 1))
+Previous: create_clock -period 10.000 -name clk_i [get_ports -quiet clk_i] (Source: D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 1))
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'cmp_result_o' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[0]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[10]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[11]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[12]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[13]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[14]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[15]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[16]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[17]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[18]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[19]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[1]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[20]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[21]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[22]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[23]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[24]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[25]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[26]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[27]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[28]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[29]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[2]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[30]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[31]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[3]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[4]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[5]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[6]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[7]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[8]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#33 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'result_o[9]' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#34 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'valid_o' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+XDCH-2#35 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'zero_o' relative to clock clk_i for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_i 0.000 [all_outputs]
+D:/Downloads/fpu_project_complete/fpu_project/fpu_constraints.xdc (Line: 8)
+Related violations: <none>
+
+

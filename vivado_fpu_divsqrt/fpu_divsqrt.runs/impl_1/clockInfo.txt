@@ -1,0 +1,10 @@
+-------------------------------------
+| Tool Version : Vivado v.2026.1
+| Date         : Wed Sep 30 20:59:50 2026
+| Host         : LAPTOP-16MV5P3N
+| Design       : checkpoint_fpu_divsqrt
+| Device       : xc7a12ti-csg325-1L-I-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+

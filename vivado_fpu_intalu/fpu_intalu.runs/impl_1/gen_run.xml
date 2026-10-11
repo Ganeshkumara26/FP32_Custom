@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a12ticsg325-1L" LaunchTime="1790759225">
+  <File Type="INIT-TIMING" Name="fpu_intalu_timing_summary_init.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fpu_intalu_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="fpu_intalu_utilization_routed.pb"/>
+  <File Type="PA-DCP" Name="fpu_intalu.dcp"/>
+  <File Type="PLACE-CTRL" Name="fpu_intalu_control_sets_placed.rpt"/>
+  <File Type="PA-TCL" Name="fpu_intalu.tcl"/>
+  <File Type="PLACE-SIMILARITY" Name="fpu_intalu_incremental_reuse_placed.rpt"/>
+  <File Type="REPORTS-TCL" Name="fpu_intalu_reports.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="fpu_intalu_timing_summary_routed.pb"/>
+  <File Type="OPT-UTIL-PB" Name="fpu_intalu_utilization_opted.pb"/>
+  <File Type="OPT-DCP" Name="fpu_intalu_opt.dcp"/>
+  <File Type="OPT-DRC" Name="fpu_intalu_drc_opted.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fpu_intalu_routed_bb.dcp"/>
+  <File Type="OPT-UTIL" Name="fpu_intalu_utilization_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fpu_intalu_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fpu_intalu.hwdef"/>
+  <File Type="OPT-TIMING" Name="fpu_intalu_timing_summary_opted.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="fpu_intalu_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="fpu_intalu_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="fpu_intalu_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="fpu_intalu_drc_pwropted.rpt"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="fpu_intalu.nts"/>
+  <File Type="PWROPT-TIMING" Name="fpu_intalu_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="fpu_intalu_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fpu_intalu_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fpu_intalu_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fpu_intalu_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fpu_intalu_utilization_placed.pb"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fpu_intalu_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="fpu_intalu_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="fpu_intalu_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="fpu_intalu_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fpu_intalu_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fpu_intalu_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fpu_intalu_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="fpu_intalu_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="fpu_intalu_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-UTIL" Name="fpu_intalu_utilization_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fpu_intalu_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fpu_intalu_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="fpu_intalu_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fpu_intalu_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="fpu_intalu_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fpu_intalu_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fpu_intalu_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fpu_intalu_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="fpu_intalu_power_routed.rpt"/>
+  <File Type="ROUTE-RQS-PB" Name="fpu_intalu_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="fpu_intalu_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fpu_intalu_route_status.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fpu_intalu_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="fpu_intalu_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fpu_intalu_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fpu_intalu_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fpu_intalu_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fpu_intalu_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fpu_intalu_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fpu_intalu_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fpu_intalu_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fpu_intalu_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fpu_intalu_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fpu_intalu_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fpu_intalu_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fpu_intalu_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_SOLUTION_FILE" Name="fpu_intalu.ncr"/>
+  <File Type="BG-BIT" Name="fpu_intalu.bit"/>
+  <File Type="BG-XML" Name="fpu_intalu.xml"/>
+  <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
+  <File Type="BG-BIN" Name="fpu_intalu.bin"/>
+  <File Type="BITSTR-MSK" Name="fpu_intalu.msk"/>
+  <File Type="BITSTR-RBT" Name="fpu_intalu.rbt"/>
+  <File Type="BITSTR-NKY" Name="fpu_intalu.nky"/>
+  <File Type="BITSTR-BMM" Name="fpu_intalu_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="fpu_intalu.mmi"/>
+  <File Type="PDI-FILE" Name="fpu_intalu.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="fpu_intalu_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="fpu_intalu_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="fpu_intalu.rcfi"/>
+  <File Type="CFI_FILE" Name="fpu_intalu.cfi"/>
+  <File Type="RNPI_FILE" Name="fpu_intalu.rnpi"/>
+  <File Type="RCDO-FILE" Name="fpu_intalu.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="fpu_intalu_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="fpu_intalu_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="fpu_intalu_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="fpu_intalu_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="fpu_intalu_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="fpu_intalu_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="fpu_intalu_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="fpu_intalu_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="fpu_intalu_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="fpu_intalu_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="fpu_intalu_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="fpu_intalu_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="fpu_intalu_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="fpu_intalu_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="fpu_intalu_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="fpu_intalu.npi"/>
+  <File Type="RBD_FILE" Name="fpu_intalu.rbd"/>
+  <File Type="MMI-FILE" Name="fpu_intalu.mmi"/>
+  <File Type="BIF-FILE" Name="fpu_intalu.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="fpu_intalu_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="fpu_intalu_pld.bif"/>
+  <File Type="LTX-FILE" Name="fpu_intalu.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="fpu_intalu_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="fpu_intalu_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fpu_intalu.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="fpu_intalu.sysdef"/>
+  <File Type="BG-BGN" Name="fpu_intalu.bgn"/>
+  <File Type="BG-DRC" Name="fpu_intalu.drc"/>
+  <File Type="RDI-RDI" Name="fpu_intalu.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="fpu_intalu_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="fpu_intalu_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../rtl/fpu_intalu.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpu_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpu_intalu"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../fpu_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../fpu_constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2026">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

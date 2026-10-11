@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Sep 30 14:43:13 2026
+| Host         : LAPTOP-16MV5P3N running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file fpu_add_bus_skew_routed.rpt -pb fpu_add_bus_skew_routed.pb -rpx fpu_add_bus_skew_routed.rpx
+| Design       : fpu_add
+| Device       : 7a12ti-csg325
+| Speed File   : -1L  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
