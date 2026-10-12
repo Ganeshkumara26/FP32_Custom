@@ -81,7 +81,7 @@ static int run(Dut* dut, uint64_t n) {
         dut->valid_i = 1; dut->a_i = a; dut->b_i = b;
         tick(dut);
         dut->valid_i = 0;
-        tick(dut); // result ready 2 cycles after issue
+        for (int i = 0; i < 4; i++) tick(dut); // result ready 5 cycles after issue (5-stage pipeline)
 
         uint32_t got = dut->result_o;
         bool ok = is_nan32(expected) ? is_nan32(got) : (got == expected);
@@ -158,7 +158,7 @@ static int run(Dut* dut, uint64_t n) {
         tick(dut); // trigger edge (E0 in the SVA's ##N sense)
         dut->start_i = 0;
 
-        int expected_edges = do_sqrt ? 27 : 28; // matches ##28/##27 in sva/fpu_divsqrt_sva.sv
+        int expected_edges = do_sqrt ? 28 : 29; // matches ##29/##28 in sva/fpu_divsqrt_sva.sv
         int edges = 0;
         while (!dut->done_o && edges <= 40) { tick(dut); edges++; }
 

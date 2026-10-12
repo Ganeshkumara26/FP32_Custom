@@ -10,21 +10,21 @@ module fpu_divsqrt_sva (
     input logic [4:0] flags_o
 );
 
-    // P1: DIVIDE latency is exactly 28 cycles
+    // P1: DIVIDE latency is exactly 29 cycles
     property div_latency;
         @(posedge clk_i) disable iff (!rst_ni)
-        (start_i && !busy_o && !op_i) |-> ##28 done_o;
+        (start_i && !busy_o && !op_i) |-> ##29 done_o;
     endproperty
     assert property (div_latency)
-        else $error("DIVSQRT_SVA P1: DIV must complete in exactly 28 cycles");
+        else $error("DIVSQRT_SVA P1: DIV must complete in exactly 29 cycles");
 
-    // P2: SQRT latency is exactly 27 cycles
+    // P2: SQRT latency is exactly 28 cycles
     property sqrt_latency;
         @(posedge clk_i) disable iff (!rst_ni)
-        (start_i && !busy_o && op_i) |-> ##27 done_o;
+        (start_i && !busy_o && op_i) |-> ##28 done_o;
     endproperty
     assert property (sqrt_latency)
-        else $error("DIVSQRT_SVA P2: SQRT must complete in exactly 27 cycles");
+        else $error("DIVSQRT_SVA P2: SQRT must complete in exactly 28 cycles");
 
     // P3: done_o is a single-cycle pulse
     assert property (@(posedge clk_i) disable iff (!rst_ni)
@@ -53,13 +53,13 @@ module fpu_divsqrt_sva (
 
     assert property (@(posedge clk_i) disable iff (!rst_ni)
         (start_i && !busy_o && !op_i && b_is_zero && a_is_finite)
-        |-> ##28 (result_o[30:23] == 8'hFF && result_o[22:0] == 23'h0 && flags_o[3] == 1'b1)
+        |-> ##29 (result_o[30:23] == 8'hFF && result_o[22:0] == 23'h0 && flags_o[3] == 1'b1)
     ) else $error("DIVSQRT_SVA P7: x / 0 must be ±Inf with div_by_zero flag");
 
     // P8: sqrt of negative → NaN, invalid flag
     assert property (@(posedge clk_i) disable iff (!rst_ni)
         (start_i && !busy_o && op_i && a_i[31] && a_i[30:0] != 31'h0)
-        |-> ##27 (result_o == 32'h7FC00000 && flags_o[4] == 1'b1)
+        |-> ##28 (result_o == 32'h7FC00000 && flags_o[4] == 1'b1)
     ) else $error("DIVSQRT_SVA P8: sqrt(negative) must be NaN + invalid");
 
     // P9: Reset clears busy

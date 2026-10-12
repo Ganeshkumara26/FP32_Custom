@@ -34,7 +34,7 @@ module tb_fp32_mul;
             valid_i = 1; a_i = a; b_i = b;
             @(posedge clk_i);
             valid_i = 0;
-            @(posedge clk_i); // result_o valid now (2 cycles after issue)
+            repeat (4) @(posedge clk_i); // result_o valid now (5 cycles after issue)
             #1;
             if ((is_nan(expected) && is_nan(result_o)) || (result_o == expected)) begin
                 if (!check_flags || flags_o == expected_flags) begin

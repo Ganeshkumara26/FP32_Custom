@@ -4,8 +4,9 @@
 //
 // Iterative radix-2 restoring digit recurrence. NOT pipelined: one
 // operation at a time, start_i ignored while busy_o is high.
-//   Divide: exactly 28 cycles from start_i to done_o.
-//   Sqrt:   exactly 27 cycles from start_i to done_o.
+//   Divide: exactly 29 cycles from start_i to done_o (28 before the
+//           pre-rounding register was added for 100 MHz timing).
+//   Sqrt:   exactly 28 cycles from start_i to done_o (27 before).
 // The cycle count is a hard architectural contract and holds for every
 // case, including the special-value shortcuts (NaN/Inf/zero) -- done_o
 // never fires early.

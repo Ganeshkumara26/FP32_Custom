@@ -18,7 +18,7 @@ module fpu_mul (
     input  logic [31:0] a_i,          // Operand A (IEEE-754 binary32)
     input  logic [31:0] b_i,          // Operand B (IEEE-754 binary32)
 
-    output logic        valid_o,      // Result available (2 cycles after valid_i)
+    output logic        valid_o,      // Result available (5 cycles after valid_i)
     output logic [31:0] result_o,     // IEEE-754 binary32 result
     output logic [4:0]  flags_o       // {invalid, div_by_zero(0), overflow, underflow, inexact}
 );

@@ -2,8 +2,7 @@
 
 A from-scratch IEEE-754 single-precision floating-point arithmetic unit in 
 SystemVerilog, with a verification environment that cross-checks it against 
-Berkeley SoftFloat. It is built and verified to successfully close timing on 
-real FPGA silicon.
+Berkeley SoftFloat. Its multiplier and adder meet a 100 MHz post-route timing constraint in Vivado on an Artix-7 target; the divide/square-root unit's final report still shows a violation (see below). It has been simulated and implemented, not run on a board.
 
 Each module is a self-contained datapath: operands in, result out, no 
 dependency on any CPU, bus, or surrounding system. All design documentation 
@@ -30,7 +29,7 @@ datapath.
 ## Physical Implementation & Timing Closure
 
 I pushed this core through Vivado physical synthesis and implementation to 
-prove it works on real hardware. I targeted the slow **Xilinx Artix-7 -1L 
+measure whether it can meet a real clock constraint. This is implementation timing evidence, not a board test. I targeted the slow **Xilinx Artix-7 -1L 
 speed grade (xc7a12ticsg325-1L)** at a rigid **100MHz (10ns period)** constraint. 
 
 - **fpu_mul**: The original datapath (due to a 48-bit Leading Zero Counter feeding 
@@ -40,8 +39,11 @@ speed grade (xc7a12ticsg325-1L)** at a rigid **100MHz (10ns period)** constraint
 - **fpu_divsqrt**: The digit recurrence engine was fast enough, but the final RNE 
   rounding block took almost 17ns. I added a pipeline register immediately before 
   the final rounding adder (`mant24_pre_reg`), increasing the latency from 28 to 29 
-  cycles, and completely isolating the recurrence loop. The internal datapath logic 
-  now comfortably meets the 10ns constraint.
+  cycles, and completely isolating the recurrence loop. The final report (`canonical_results/fpu_divsqrt_timing.txt`) 
+  still shows a worst setup slack of -1.642 ns across 34 failing endpoints; the worst path runs from the `a_i` 
+  input port through the operand-setup logic into the recurrence registers, so the recurrence loop itself is not the limiter.
+- **fpu_add**: meets the constraint (setup +0.100 ns, hold +0.163 ns). **fpu_mul**: setup +0.346 ns, hold +0.083 ns.
+- **fpu_intalu**: purely combinational, so it has no clocked paths to time.
 
 ---
 
